@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <!-- ============================================ -->
+  <!-- DRAG AND DROP INTO TEXT (ddwtos) - 2 QUESTIONS -->
+  <!-- ============================================ -->
+
+  <question type="ddwtos">
+    <name><text>PHP DragText 01 - Array declaration</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Drag the correct syntax element into the blanks to declare a PHP array.</p><pre>$fruits = [[1]] "apple", "banana", "cherry" [[2]];</pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Correct! Arrays in PHP are enclosed in square brackets.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Check the array syntax in PHP.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>PHP arrays use square brackets [ ] to enclose elements.</text></incorrectfeedback>
+    <dragbox><text>[</text><group>1</group></dragbox>
+    <dragbox><text>{</text><group>1</group></dragbox>
+    <dragbox><text>(</text><group>1</group></dragbox>
+    <dragbox><text>]</text><group>2</group></dragbox>
+    <dragbox><text>}</text><group>2</group></dragbox>
+    <dragbox><text>)</text><group>2</group></dragbox>
+  </question>
+
+  <question type="ddwtos">
+    <name><text>PHP DragText 02 - Loop structure</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Drag the correct keywords into the blanks to complete a foreach loop.</p><pre>[[1]] ($array [[2]] $item) {
+    echo $item;
+}</pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Correct! foreach iterates over array elements.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Review the foreach loop syntax.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>The correct syntax is: foreach ($array as $item)</text></incorrectfeedback>
+    <dragbox><text>foreach</text><group>1</group></dragbox>
+    <dragbox><text>for</text><group>1</group></dragbox>
+    <dragbox><text>while</text><group>1</group></dragbox>
+    <dragbox><text>as</text><group>2</group></dragbox>
+    <dragbox><text>in</text><group>2</group></dragbox>
+    <dragbox><text>to</text><group>2</group></dragbox>
+  </question>
+
+  <!-- ================================================== -->
+  <!-- DRAG AND DROP ONTO IMAGE EQUIVALENTS (Short Answer) -->
+  <!-- ================================================== -->
+
+  <question type="shortanswer">
+    <name><text>PHP Image Equivalent 01 - String method identification</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Image-equivalent task:</strong> Study the diagram below and identify the marked component.</p>
+<p>In the code snippet, identify the name of the string method indicated by the box labeled <strong>COMPONENT A</strong>:</p>
+<pre>$text = "Hello World";
+        ╔══════════╗
+        ║ COMPONENT A
+        ║ (method name)
+        ║
+$result = $text->strtolower();
+         ▲
+         └─ This is where it's applied</pre>
+<p><strong>Type the exact method name (without parentheses or object reference):</strong></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>strtolower</text>
+      <feedback format="html"><text>Correct! strtolower() converts a string to lowercase. In PHP, this is typically used as str_replace() or similar, but in this object-oriented context, we use strtolower().</text></feedback>
+    </answer>
+    <answer fraction="100">
+      <text>toLowerCase</text>
+      <feedback format="html"><text>Also acceptable - this is the common naming convention, though PHP uses strtolower().</text></feedback>
+    </answer>
+  </question>
+
+  <question type="shortanswer">
+    <name><text>PHP Image Equivalent 02 - Conditional operator symbol</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Image-equivalent task:</strong> Identify the marked operator in the diagram below.</p>
+<p>In the ternary expression, type the operator symbol indicated by <strong>BOX B</strong>:</p>
+<pre>$status = (age > 18) BOX_B "Adult" : "Minor";
+                    ▲
+                    │
+                   BOX B
+           (comparison operator)</pre>
+<p>This operator checks whether the value is greater than a threshold.</p>
+<p><strong>Type only the operator symbol:</strong></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <usecase>1</usecase>
+    <answer fraction="100">
+      <text>?</text>
+      <feedback format="html"><text>Correct! The ? operator starts the true branch of a ternary conditional. The full syntax is: condition ? true_value : false_value</text></feedback>
+    </answer>
+  </question>
+
+</quiz>
