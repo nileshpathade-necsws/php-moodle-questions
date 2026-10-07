@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+  <!-- ============================================ -->
+  <!-- DRAG AND DROP INTO TEXT (ddwtos) - 2 QUESTIONS -->
+  <!-- ============================================ -->
+
+  <question type="ddwtos">
+    <name><text>PHP DragText 01 - Array declaration</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Drag the correct syntax element into the blanks to declare a PHP array.</p><pre>$fruits = [[1]] "apple", "banana", "cherry" [[2]];</pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Correct! Arrays in PHP are enclosed in square brackets.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Check the array syntax in PHP.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>PHP arrays use square brackets [ ] to enclose elements.</text></incorrectfeedback>
+    <dragbox><text>[</text><group>1</group></dragbox>
+    <dragbox><text>{</text><group>1</group></dragbox>
+    <dragbox><text>(</text><group>1</group></dragbox>
+    <dragbox><text>]</text><group>2</group></dragbox>
+    <dragbox><text>}</text><group>2</group></dragbox>
+    <dragbox><text>)</text><group>2</group></dragbox>
+  </question>
+
+  <question type="ddwtos">
+    <name><text>PHP DragText 02 - Loop structure</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Drag the correct keywords into the blanks to complete a foreach loop.</p><pre>[[1]] ($array [[2]] $item) {
+    echo $item;
+}</pre>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Correct! foreach iterates over array elements.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Review the foreach loop syntax.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>The correct syntax is: foreach ($array as $item)</text></incorrectfeedback>
+    <dragbox><text>foreach</text><group>1</group></dragbox>
+    <dragbox><text>for</text><group>1</group></dragbox>
+    <dragbox><text>while</text><group>1</group></dragbox>
+    <dragbox><text>as</text><group>2</group></dragbox>
+    <dragbox><text>in</text><group>2</group></dragbox>
+    <dragbox><text>to</text><group>2</group></dragbox>
+  </question>
+
+  <!-- ================================================== -->
+  <!-- DRAG AND DROP ONTO IMAGE - 2 QUESTIONS -->
+  <!-- Images should be placed in Moodle's file storage -->
+  <!-- ================================================== -->
+
+  <question type="shortanswer">
+    <name><text>PHP Image Marker 01 - Function components</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Identify the marked components in the diagram below:</strong></p>
+<p>In the PHP function diagram, label the component marked with <strong>Box A</strong>. Type the exact term:</p>
+<img src="@@PLUGINFILE@@/php_function_diagram.png" alt="PHP Function Structure Diagram" style="max-width: 600px; border: 1px solid #ccc; padding: 10px;">
+<p><strong>What is component A?</strong></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <usecase>0</usecase>
+    <answer fraction="100">
+      <text>function</text>
+      <feedback format="html"><text>Correct! Component A is the 'function' keyword used to declare a PHP function.</text></feedback>
+    </answer>
+    <answer fraction="100">
+      <text>keyword</text>
+      <feedback format="html"><text>Also correct - 'function' is a PHP keyword.</text></feedback>
+    </answer>
+    <answer fraction="50">
+      <text>declaration</text>
+      <feedback format="html"><text>Partially correct - this is part of function declaration syntax.</text></feedback>
+    </answer>
+    <file name="php_function_diagram.png" path="/php_function_diagram.png"/>
+  </question>
+
+  <question type="shortanswer">
+    <name><text>PHP Image Marker 02 - Array structure</text></name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>Identify the array components in the visual diagram:</strong></p>
+<p>Study the array diagram below and answer: What is the value at the position marked by <strong>Box B</strong>?</p>
+<img src="@@PLUGINFILE@@/php_array_structure.png" alt="PHP Array Structure Diagram" style="max-width: 600px; border: 1px solid #ccc; padding: 10px;">
+<p><strong>Type the exact value shown in Box B (case-sensitive):</strong></p>]]></text>
+    </questiontext>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <usecase>1</usecase>
+    <answer fraction="100">
+      <text>banana</text>
+      <feedback format="html"><text>Correct! Box B points to the array element with value 'banana' at index 1.</text></feedback>
+    </answer>
+    <file name="php_array_structure.png" path="/php_array_structure.png"/>
+  </question>
+
+</quiz>
